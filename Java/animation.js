@@ -1,4 +1,4 @@
-var butto = document.getElementById('button');
+var butto = document.getElementById('buon');
 document.getElementsByClassName("inner1")[0]
 
 butto.addEventListener('click', event => {
