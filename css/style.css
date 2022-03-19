@@ -1,0 +1,49 @@
+body
+{
+	margin: 0px;
+	background: #222222;
+	color: #9aa0a6;
+}
+.contenido
+{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-items: center;
+	align-content: center;
+}
+
+	#lista
+	{
+		flex-direction: row;
+	}
+
+	.contenido
+	{
+		flex-direction: row;
+	}
+
+.box
+{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	max-width: 1200px;
+	height: 300px;
+	margin: 20px;
+	background-color: #333333;
+}
+
+@media only screen and (max-width:  480px)
+{
+	#lista
+	{
+		flex-direction: row;
+	}
+
+	.contenido
+	{
+		flex-direction: row;
+	}
+}
