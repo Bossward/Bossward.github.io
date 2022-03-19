@@ -1,3 +1,17 @@
+
+#button{
+	position: absolute;
+	top: 98%;
+	left: 98%;
+	transform: translate(-100%,-100%);
+	background-color: #555555; 
+	border: none;
+	color: #bbbbbb;
+	cursor: pointer;
+	font-size: 4px;
+	padding: 2%;
+}
+
 .inner1
 {
 	background: #333333;
@@ -54,7 +68,6 @@
 	z-index: 2;	
 }
 
-
 #circle
 {
 	/*shape*/
@@ -99,4 +112,39 @@
 	left: 50%;
 	transform: translate(-50%,-50%);
 	z-index: 1;	
+}
+
+
+.inner-a
+{
+	animation-name: animlines;
+	animation-duration: 8s;
+}
+
+@keyframes animlines
+{
+	from{
+		left: -50%;
+	}
+	to{
+		left: 50%;
+	}
+}
+
+.circles-a
+{
+	animation-name: animcircles;
+	animation-duration: 5s;
+}
+
+
+@keyframes animcircles
+{
+	from
+	{
+		border-radius: 0%;
+	}
+	to{
+		border-radius: 50%;
+	}
 }

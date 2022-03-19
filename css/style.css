@@ -1,9 +1,12 @@
 body
 {
 	margin: 0px;
-	background: #222222;
+	/*background: url('../img/backg.jpg');*/
+	background-color: #222222;
 	color: #9aa0a6;
 }
+
+
 .contenido
 {
 	display: flex;
@@ -33,6 +36,18 @@ body
 	height: 300px;
 	margin: 20px;
 	background-color: #333333;
+}
+#videop
+{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+}
+
+.video
+{
+	margin: 15px;
 }
 
 @media only screen and (max-width:  480px)

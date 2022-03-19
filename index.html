@@ -6,7 +6,7 @@
 		<meta name="Portfolio" content="Some Projects">
 		<meta name="keywords" content="HTML, CSS, JavaScript">
 		<meta name="author" content="Jordy M.">
-		<title>Strange Shapes</title>
+		<title>Test Web Page</title>
 		<link rel="stylesheet" href="css/spiral.css">
 		<link rel="stylesheet" href="css/circle.css">
 		<link rel="stylesheet" href="css/header.css">
@@ -20,13 +20,14 @@
 		</div>
 		
 		<div class="contenido">
-			<div class="box">            
-				<div class="inner1"></div>
-	            <div class="inner2"></div>
-	            <div class="inner3"></div>
-	            <div class="inner4"></div>
-	            <div id="circle"></div>
-	            <div id="boxcircle"><div id="bigcircle"></div></div>
+			<div class="box">  
+				<button id="button">Animation</button>
+				<div class="inner1 inner"></div>
+	            <div class="inner2 inner"></div>
+	            <div class="inner3 inner"></div>
+	            <div class="inner4 inner"></div>
+	            <div id="circle" class="circleclass"></div>
+	            <div id="boxcircle" class="circleclass"><div id="bigcircle" class="circleclass"></div></div>
 	        </div>
 			<div class="box">
 				<div class="container2">
@@ -42,9 +43,12 @@
 		            <div class="box32">
 		                <div class="circle32"></div>
 		            </div>
-				</div>
-				
+				</div>	
+			</div>
+			<div class="box" id="videop">
+				<iframe class="video" width="500" height="240" src="https://www.youtube.com/embed/6xNcXwC6ikQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
+		<script src="Java/animation.js"></script>
 	</body>
 </html>
