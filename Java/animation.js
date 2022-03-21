@@ -1,30 +1,28 @@
-var butto = document.getElementById('buon');
-document.getElementsByClassName("inner1")[0]
+var butto = document.getElementById('button');
 
-butto.addEventListener('click', event => {
- jls();
- otha();
+var slider = document.getElementById('myRange');
+
+slider.addEventListener('input', event => {
+    slideraction();
 });
 
- function jls()
-     {
-
-    var elements = document.getElementsByClassName("inner");
-    for (var i = 0; i < elements.length; i++) {
+butto.addEventListener('click', event => {
+     playanimation("inner","inner-a");
+     playanimation("circleclass","circles-a");
+});
+  
+function playanimation(name, rename){
+    var elements = document.getElementsByClassName(name);
+    for (var i = 0; i < elements.length; i++){
         var ne = elements[i].cloneNode(true);
         elements[i].parentNode.replaceChild(ne, elements[i]);
-        elements[i].classList.remove("inner-a");
-        elements[i].classList.add("inner-a");
+        elements[i].classList.remove(rename);
+        elements[i].classList.add(rename);
     }
  };
 
- function otha()
- {
-    var elements = document.getElementsByClassName("circleclass");
-    for (var i = 0; i < elements.length; i++) {
-        var ne = elements[i].cloneNode(true);
-        elements[i].parentNode.replaceChild(ne, elements[i]);
-        elements[i].classList.remove("circles-a");
-        elements[i].classList.add("circles-a");
-    }
- };
+function slideraction(){
+    let range_number = 2/slider.value;
+    if(range_number === 2) range_number = 0;
+    document.getElementsByClassName("container2")[0].style.animationDuration = range_number.toString()+"s";
+};

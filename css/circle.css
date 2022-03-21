@@ -1,5 +1,5 @@
 
-#buon{
+#button{
 	position: absolute;
 	top: 98%;
 	left: 98%;
@@ -8,7 +8,7 @@
 	border: none;
 	color: #bbbbbb;
 	cursor: pointer;
-	font-size: medium;
+	font-size: 4px;
 	padding: 2%;
 }
 
